@@ -1,1 +1,0 @@
-I am doing a test to see how to commit a file to an empty repository by cloning it locally via command prompt

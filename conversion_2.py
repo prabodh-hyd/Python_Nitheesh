@@ -1,13 +1,13 @@
 from docling.document_converter import DocumentConverter
 from pathlib import Path
 
-first_10_pages = "C:\\Users\\Nitheesh kumar\\PycharmProjects\\file_conversion_2\\cities.pdf.md"
+input_path = "C:\\Users\\Nitheesh kumar\\PycharmProjects\\file_conversion_2\\cities.pdf.md"
 
 converter = DocumentConverter()
-result = converter.convert(first_10_pages)
+result = converter.convert(input_path)
 output_dir = Path("md_conversion")
 output_dir.mkdir(parents = True, exist_ok = True)
-doc_filename = Path(first_10_pages).stem
+doc_filename = Path(input_path).stem
 
 #converting to file formats by .html
 html_filename = output_dir / f"{doc_filename}.html"
